@@ -1,0 +1,102 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --dark-cyan: hsl(183, 100%, 15%);
+  --grey-cyan-1: hsl(186, 14%, 43%);
+  --grey-cyan-2: hsl(184, 14%, 56%);
+  --light-cyan-1: hsl(185, 41%, 84%);
+  --light-cyan-2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-cyan-1);
+  height: 100vh;
+}
+
+@media only screen and (max-width: 375px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .app > div {
+    width: 100%;
+  }
+}
+
+.app {
+  /* height: 480px;
+  width: 920px; */
+  background: var(--white);
+  border-radius: 20px;
+
+  display: flex;
+  padding: 2rem;
+  
+}
+
+.app > div {
+  /* width: 50% */
+  height: 420px;
+  width: 420px;
+}
+
+.c1 {
+  border: solid red 2px;
+  padding: 1rem;  
+}
+
+.c2 {
+  background: var(--dark-cyan);
+  border-radius: 15px;
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c1 .head {
+  color: var(--grey-cyan-1);
+}
+
+.c2 .head {
+  color: var(--white);
+}
+
+.sub {
+  color: var(--grey-cyan-2);
+  font-size: 12px;
+}
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.amount {
+  color: var(--strong-cyan);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.c2 button {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+  background: var(--strong-cyan);
+  color: var(--dark-cyan);
+  border: none;
+  border-radius: 5px;
+}
